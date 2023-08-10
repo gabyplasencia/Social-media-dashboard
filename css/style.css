@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 :root {
   --facebook: hsl(208, 92%, 53%);
   --twitter: hsl(203, 89%, 53%);
@@ -17,4 +18,14 @@
   --card-bg-blue: hsl(228, 28%, 20%);
   --card-text-lightblue: hsl(228, 34%, 66%);
   --card-text-white: hsl(0, 0%, 100%);
+}
+
+:root {
+  --font-family-main: "Inter", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+body {
+  font-family: var(--font-family-main);
 }/*# sourceMappingURL=style.css.map */
