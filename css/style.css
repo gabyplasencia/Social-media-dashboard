@@ -72,6 +72,10 @@ body {
   color: var(--symbol-down-red);
 }
 
+.stat > span {
+  font-weight: var(--font-weight-bold);
+}
+
 header {
   background-color: var(--bg-lightblue);
   height: 12rem;

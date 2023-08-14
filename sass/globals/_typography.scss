@@ -46,3 +46,7 @@ body{
 .down > span{
   color: var(--symbol-down-red);
 }
+
+.stat > span {
+    font-weight: var(--font-weight-bold);
+}
