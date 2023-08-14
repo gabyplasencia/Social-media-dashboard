@@ -1,3 +1,19 @@
+$header-height: 12rem;
+
+header {
+    background-color: var(--bg-lightblue);
+    height: $header-height;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+main {
+    margin-top: calc($header-height / 1.5);
+}
+
 .container{
     width: 85%;
     max-width: 1100px;
