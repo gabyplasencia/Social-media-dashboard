@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+.card {
+  background-color: var(--card-bg-lightgray);
+  border-radius: 5px;
+  margin: 1.5rem 0;
+  padding: 1.8rem;
+}
+
 :root {
   --facebook: hsl(208, 92%, 53%);
   --twitter: hsl(203, 89%, 53%);
@@ -30,6 +37,20 @@ body {
   font-family: var(--font-family-main);
 }
 
+.header__subtitle,
+.username,
+.overview__card--title {
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--card-text-gray);
+}
+
+.overview__title {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--card-text-gray);
+}
+
 .container {
   width: 85%;
   max-width: 1100px;
@@ -40,7 +61,7 @@ body {
   display: flex;
 }
 
-.flex-col {
+.col {
   flex-direction: column;
 }
 
@@ -84,6 +105,14 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

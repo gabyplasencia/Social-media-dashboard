@@ -6,6 +6,22 @@
     --font-weight-bold: 700;
 }
 
+@mixin gray-title ($font-size: 1rem){
+    font-size: $font-size;
+    font-weight: var(--font-weight-bold);
+    color: var(--card-text-gray);
+}
+
 body{
     font-family: var(--font-family-main);
+}
+
+.header__subtitle,
+.username,
+.overview__card--title {
+    @include gray-title();
+}
+
+.overview__title{
+    @include gray-title($font-size: 1.5rem);
 }
