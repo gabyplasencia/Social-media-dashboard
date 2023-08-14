@@ -4,3 +4,27 @@
     margin: 1.5rem 0;
     padding: 1.8rem;
 }
+
+.card--follower {
+    border-top: solid 5px var(--_top-color);
+}
+
+.card--follower:nth-child(1){
+    --_top-color: var(--facebook);
+}
+
+.card--follower:nth-child(2){
+    --_top-color: var(--twitter);
+}
+
+.card--follower:nth-child(3){
+    border-top: solid 5px;
+    background: linear-gradient(var(--card-bg-lightgray), var(--card-bg-lightgray)) padding-box
+    ,var(--instagram) border-box;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.card--follower:nth-child(4){
+    --_top-color: var(--youtube);
+}
