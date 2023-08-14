@@ -25,3 +25,24 @@ body{
 .overview__title{
     @include gray-title($font-size: 1.5rem);
 }
+
+.followers__number {
+    color: var(--card-text-darkblue);
+    font-size: 4rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -3px;
+}
+
+.app-follow-name {
+    text-transform: uppercase;
+    color: var(--card-text-gray);
+    letter-spacing: 0.25rem;
+}
+
+.up > span{
+    color: var(--symbol-up-green);
+}
+
+.down > span{
+  color: var(--symbol-down-red);
+}
