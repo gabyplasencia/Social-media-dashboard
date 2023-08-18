@@ -24,12 +24,14 @@ main {
     margin-inline: auto;
 }
 
-.flex{
+.flex--col{
     display: flex;
+    flex-direction: column;
 }
 
-.col{
-    flex-direction: column;
+.flex--row{
+    display: flex;
+    flex-direction: row;
 }
 
 .grid{

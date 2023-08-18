@@ -1,12 +1,14 @@
 .card {
     background-color: var(--card-bg);
     border-radius: 5px;
-    margin: 1.5rem 0;
-    padding: 1.8rem;
 }
 
 .card--follower {
     border-top: solid 5px var(--_top-color);
+    margin: 1.5rem 0;
+    padding: 1.8rem;
+    align-items: center;
+    text-align: center;
 }
 
 .card--follower:nth-child(1){
@@ -27,4 +29,42 @@
 
 .card--follower:nth-child(4){
     --_top-color: var(--youtube);
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.app-username,
+.stat,
+.overview__card__header,
+.overview__stats {
+    @include flex-row();
+}
+
+.stat {
+    align-items: center;
+}
+
+.overview{
+
+    &__card {
+     margin: 0.5rem 0;
+     padding: 1.4rem 2rem;
+
+       &__header{
+        justify-content: space-between;
+        margin-bottom: 1.4rem;
+       }
+    }
+
+    &__stats{
+        justify-content: space-between;
+    }
+
+    &__number{
+        font-size: var(--font-size-big);
+        font-weight: var(--font-weight-bold);
+    }
 }

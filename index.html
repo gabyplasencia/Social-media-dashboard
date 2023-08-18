@@ -12,7 +12,7 @@
 <body>
   <header>
     <div class="container">
-      <div class="col">
+      <div class="flex--col">
        <h1 class="header__title">Social Media Dashboard</h1>
        <p class="header__subtitle">Total Followers: 23,004</p>
       </div>
@@ -33,141 +33,141 @@
   <main>
     <div class="container">
       <section class="follower-section">
-        <div class="card card--follower">
-          <div class="app-username flex">
+        <div class="card card--follower flex--col">
+          <div class="app-username">
             <img src="images/icon-facebook.svg" alt="facebook icon" class="app-icon">
             <h3 class="username">@nathanf</h3> 
           </div>
           <p class="followers__number">1987</p>
           <p class="app-follow-name">Followers</p>
-          <p class="stat flex  up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>12 Today</span></p>
+          <p class="stat up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>12 Today</span></p>
         </div>
 
-        <div class="card card--follower">
-          <div class="app-username flex">
+        <div class="card card--follower flex--col">
+          <div class="app-username">
             <img src="images/icon-twitter.svg" alt="twitter icon" class="app-icon">
             <h3 class="username">@nathanf</h3> 
           </div>
           <p class="followers__number">1044</p>
           <p class="app-follow-name">Followers</p>
-          <p class="stat flex up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>99 Today</span></p>
+          <p class="stat up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>99 Today</span></p>
         </div>
 
-        <div class="card card--follower">
-          <div class="app-username flex">
+        <div class="card card--follower flex--col">
+          <div class="app-username">
             <img src="images/icon-instagram.svg" alt="instagram icon" class="app-icon">
             <h3 class="username">@realnathanf</h3> 
           </div>
           <p class="followers__number">11k</p>
           <p class="app-follow-name">Followers</p>
-          <p class="stat flex up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>1099 Today</span></p>
+          <p class="stat up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>1099 Today</span></p>
         </div>
 
-        <div class="card card--follower">
-          <div class="app-username flex">
+        <div class="card card--follower flex--col">
+          <div class="app-username">
             <img src="images/icon-youtube.svg" alt="youtube icon" class="app-icon">
             <h3 class="username">Nathan F.</h3> 
           </div>
           <p class="followers__number">8239</p>
           <p class="app-follow-name">Subscribers</p>
-          <p class="stat flex down"><img src="images/icon-down.svg" alt="down symbol" class="stat-symbol"><span>144 Today</span></p>
+          <p class="stat down"><img src="images/icon-down.svg" alt="down symbol" class="stat-symbol"><span>144 Today</span></p>
         </div>
     </section>
 
-    <section class="overview-section">
+    <section class="overview">
       <h2 class="overview__title">Overview - Today</h2>
 
-      <div class="col">
+      <div class="flex--col">
         <div class="card overview__card">
-          <div class="card__header flex">
+          <div class="overview__card__header">
             <h3 class="overview__card--title">Page Views</h3> 
             <img src="images/icon-facebook.svg" alt="facebook icon" class="app-icon">
           </div>
-          <div class="overview__stats flex">
+          <div class="overview__stats flex--row">
             <p class="overview__number">87</p>
-            <p class="stat flex up"><img src="images/icon-up.svg" alt="up sympol" class="stat-symbol"><span>3%</span></p>
+            <p class="stat up"><img src="images/icon-up.svg" alt="up sympol" class="stat-symbol"><span>3%</span></p>
           </div>
         </div>
-        <div class="card overview-card">
-          <div class="card__header flex">
+        <div class="card overview__card">
+          <div class="overview__card__header">
             <h3 class="overview__card--title">Likes</h3> 
             <img src="images/icon-facebook.svg" alt="facebook icon" class="app-icon">
           </div>
-          <div class="overview__stats flex">
+          <div class="overview__stats">
             <p class="overview__number">52</p>
-            <p class="stat flex down"><img src="images/icon-down.svg" alt="down icon" class="stat-symbol"><span>2%</span></p>
+            <p class="stat down"><img src="images/icon-down.svg" alt="down icon" class="stat-symbol"><span>2%</span></p>
           </div>
         </div>
       </div>
       
       
-      <div class="col">
-        <div class="card overview-card">
-          <div class="card__header flex">
+      <div class="flex--col">
+        <div class="card overview__card">
+          <div class="overview__card__header">
             <h3 class="overview__card--title">Likes</h3> 
             <img src="images/icon-instagram.svg" alt="instagram icon" class="app-icon">
           </div>
-          <div class="overview__stats flex">
+          <div class="overview__stats">
             <p class="overview__number">5462</p>
-            <p class="stat flex up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>2257%</span></p>
+            <p class="stat up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>2257%</span></p>
           </div>
         </div>
-        <div class="card overview-card">
-          <div class="card__header flex">
+        <div class="card overview__card">
+          <div class="overview__card__header">
             <h3 class="overview__card--title">Profile Views</h3> 
             <img src="images/icon-instagram.svg" alt="instagram icon" class="app-icon">
           </div>
-          <div class="overview__stats flex">
+          <div class="overview__stats">
             <p class="overview__number">52k</p>
-            <p class="stat flex up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>1375%</span></p>
+            <p class="stat up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>1375%</span></p>
           </div>
         </div>
       </div>
 
       
-      <div class="col">
-        <div class="card overview-card">
-          <div class="card__header flex">
+      <div class="flex--col">
+        <div class="card overview__card">
+          <div class="overview__card__header">
             <h3 class="overview__card--title">Retweets</h3> 
             <img src="images/icon-twitter.svg" alt="twitter icon" class="app-icon">
           </div>
-          <div class="overview__stats flex">
+          <div class="overview__stats">
             <p class="overview__number">117</p>
-            <p class="stat flex up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>303%</span></p>
+            <p class="stat up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>303%</span></p>
           </div>
         </div>
-        <div class="card overview-card">
-          <div class="card__header flex">
+        <div class="card overview__card">
+          <div class="overview__card__header">
             <h3 class="overview__card--title">Likes</h3> 
             <img src="images/icon-twitter.svg" alt="twitter icon" class="app-icon">
           </div>
-          <div class="overview__stats flex">
+          <div class="overview__stats">
             <p class="overview__number">507</p>
-            <p class="stat flex up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>553%</span></p>
+            <p class="stat up"><img src="images/icon-up.svg" alt="up symbol" class="stat-symbol"><span>553%</span></p>
           </div>
         </div>
       </div>
       
 
-      <div class="col">
-        <div class="card overview-card">
-          <div class="card__header flex">
+      <div class="flex--col">
+        <div class="card overview__card">
+          <div class="overview__card__header">
             <h3 class="overview__card--title">Likes</h3> 
             <img src="images/icon-youtube.svg" alt="youtube icon" class="app-icon">
           </div>
-          <div class="overview__stats flex">
+          <div class="overview__stats">
             <p class="overview__number">107</p>
-            <p class="stat flex down"><img src="images/icon-down.svg" alt="down symbol" class="stat-symbol"><span>19%</span></p>
+            <p class="stat down"><img src="images/icon-down.svg" alt="down symbol" class="stat-symbol"><span>19%</span></p>
           </div>
         </div>
-        <div class="card overview-card">
-          <div class="card__header flex">
+        <div class="card overview__card">
+          <div class="overview__card__header">
             <h3 class="overview__card--title">Total Views</h3> 
             <img src="images/icon-youtube.svg" alt="youtube icon" class="app-icon">
           </div>
-          <div class="overview__stats flex">
+          <div class="overview__stats">
             <p class="overview__number">1407</p>
-            <p class="stat flex down"><img src="images/icon-down.svg" alt="down symbol" class="stat-symbol"><span>12%</span></p>
+            <p class="stat down"><img src="images/icon-down.svg" alt="down symbol" class="stat-symbol"><span>12%</span></p>
           </div>
         </div>
       </div>
@@ -177,8 +177,8 @@
   
   <footer>
     <div class="container flex">
-      <div class="attribution col">
-        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>   
+      <div class="attribution flex--col">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>   
         <p>Coded by <a href="https://github.com/gabyplasencia" target="_blank">Gabriela Plasecia</a>.</p>  
       </div>
     </div>

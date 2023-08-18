@@ -2,12 +2,14 @@
 .card {
   background-color: var(--card-bg);
   border-radius: 5px;
-  margin: 1.5rem 0;
-  padding: 1.8rem;
 }
 
 .card--follower {
   border-top: solid 5px var(--_top-color);
+  margin: 1.5rem 0;
+  padding: 1.8rem;
+  align-items: center;
+  text-align: center;
 }
 
 .card--follower:nth-child(1) {
@@ -27,6 +29,34 @@
 
 .card--follower:nth-child(4) {
   --_top-color: var(--youtube);
+}
+
+.app-username,
+.stat,
+.overview__card__header,
+.overview__stats {
+  display: flex;
+  flex-direction: row;
+}
+
+.stat {
+  align-items: center;
+}
+
+.overview__card {
+  margin: 0.5rem 0;
+  padding: 1.4rem 2rem;
+}
+.overview__card__header {
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+.overview__stats {
+  justify-content: space-between;
+}
+.overview__number {
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
 }
 
 .app-icon {
@@ -134,10 +164,19 @@ fieldset {
   --font-family-main: "Inter", sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
+  --font-size-biggest: 3rem;
+  --font-size-big: 2rem;
+  --font-size-regular: 1.2rem;
+  --font-size-small: 1rem;
+  --font-size-smallest: 0.7rem;
 }
 
 body {
   font-family: var(--font-family-main);
+}
+
+.header__title {
+  font-size: var(--font-size-big);
 }
 
 .header__subtitle,
@@ -150,7 +189,7 @@ label,
 }
 
 .overview__title {
-  font-size: 1.5rem;
+  font-size: var(--font-size-big);
   font-weight: var(--font-weight-bold);
   color: var(--text-color2);
 }
@@ -161,7 +200,7 @@ label,
 
 .followers__number {
   color: var(--text-color1);
-  font-size: 4rem;
+  font-size: var(--font-size-biggest);
   font-weight: var(--font-weight-bold);
   letter-spacing: -3px;
 }
@@ -181,6 +220,14 @@ label,
 }
 
 .stat > span {
+  font-weight: var(--font-weight-bold);
+}
+
+.attribution {
+  color: var(--text-color2);
+}
+.attribution a {
+  color: var(--text-color2);
   font-weight: var(--font-weight-bold);
 }
 
@@ -208,12 +255,14 @@ main {
   margin-inline: auto;
 }
 
-.flex {
+.flex--col {
   display: flex;
+  flex-direction: column;
 }
 
-.col {
-  flex-direction: column;
+.flex--row {
+  display: flex;
+  flex-direction: row;
 }
 
 .grid {

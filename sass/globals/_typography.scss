@@ -4,6 +4,11 @@
     --font-family-main: 'Inter', sans-serif;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
+    --font-size-biggest: 3rem;
+    --font-size-big: 2rem;
+    --font-size-regular: 1.2rem;
+    --font-size-small: 1rem;
+    --font-size-smallest: 0.7rem;
 }
 
 @mixin gray-title ($font-size: 1rem){
@@ -16,6 +21,10 @@ body{
     font-family: var(--font-family-main);
 }
 
+.header__title {
+    font-size: var(--font-size-big)
+}
+
 .header__subtitle,
 .username,
 label,
@@ -24,7 +33,7 @@ label,
 }
 
 .overview__title{
-    @include gray-title($font-size: 1.5rem);
+    @include gray-title($font-size: var(--font-size-big));
 }
 
 .toggle > label > span {
@@ -33,7 +42,7 @@ label,
 
 .followers__number {
     color: var(--text-color1);
-    font-size: 4rem;
+    font-size: var(--font-size-biggest);
     font-weight: var(--font-weight-bold);
     letter-spacing: -3px;
 }
@@ -54,4 +63,12 @@ label,
 
 .stat > span {
     font-weight: var(--font-weight-bold);
+}
+
+.attribution {
+    color: var(--text-color2);
+    a {
+        color: var(--text-color2);
+        font-weight: var(--font-weight-bold);
+    }
 }
