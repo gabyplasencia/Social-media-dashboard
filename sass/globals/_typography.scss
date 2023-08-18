@@ -18,12 +18,17 @@ body{
 
 .header__subtitle,
 .username,
+label,
 .overview__card--title {
     @include gray-title();
 }
 
 .overview__title{
     @include gray-title($font-size: 1.5rem);
+}
+
+.toggle > label > span {
+    font-size: 0;
 }
 
 .followers__number {

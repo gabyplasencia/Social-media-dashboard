@@ -1,9 +1,8 @@
 .toggle {
-	--_baseSize: 12px;
+	--_baseSize: 0.45rem;
+    margin: 0.3rem 0;
 	
 	label {
-		font-size: calc(var(--_baseSize) * 1.75);
-		margin: 0 .5em 0;
 		cursor: pointer;
 	}
 	
@@ -31,9 +30,8 @@
 .toggle__switcher {
 	display: block;
 	position: absolute;
-	top: 4px;
-	left: 5px;
-	right: 100%;
+	top: 2.4px;
+	left: 3px;
 	height: 80%;
 	aspect-ratio: 1;
 	border-radius: 50%;

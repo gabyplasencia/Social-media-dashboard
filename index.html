@@ -13,19 +13,19 @@
   <header>
     <div class="container">
       <div class="col">
-        <h1 class="header__title">Social Media Dashboard</h1>
-      <p class="header__subtitle">Total Followers: 23,004</p>
+       <h1 class="header__title">Social Media Dashboard</h1>
+       <p class="header__subtitle">Total Followers: 23,004</p>
       </div>
       
       <fieldset class="toggle" aria-label="theme switcher" role="radiogroup">
-        <label for="dark">Dark</label>
+        <label for="dark">Dark Mode <span class="hidden">On</span></label>
         <div class="toggle__wrapper">
           <input type="radio" name="theme" id="dark">
           <input type="radio" name="theme" id="light">
           <span aria-hidden="true" class="toggle__background"></span>
           <span aria-hidden="true" class="toggle__switcher"></span>
         </div>
-        <label for="light">Light</label>
+        <label class="hidden" for="light">Dark mode off</label>
       </fieldset>
     </div>
   </header>
