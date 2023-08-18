@@ -29,6 +29,14 @@
   --_top-color: var(--youtube);
 }
 
+.app-icon {
+  margin-inline: 0.4rem;
+}
+
+.stat-symbol {
+  margin-inline: 0.15rem;
+}
+
 .toggle {
   --_baseSize: 0.45rem;
   margin: 0.3rem 0;
