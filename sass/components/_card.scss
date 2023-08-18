@@ -1,5 +1,5 @@
 .card {
-    background-color: var(--card-bg-lightgray);
+    background-color: var(--card-bg);
     border-radius: 5px;
     margin: 1.5rem 0;
     padding: 1.8rem;
@@ -19,7 +19,7 @@
 
 .card--follower:nth-child(3){
     border-top: solid 5px;
-    background: linear-gradient(var(--card-bg-lightgray), var(--card-bg-lightgray)) padding-box
+    background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box
     ,var(--instagram) border-box;
     border-color: transparent;
     border-radius: 5px;

@@ -1,13 +1,17 @@
 $header-height: 12rem;
 
 header {
-    background-color: var(--bg-lightblue);
+    background-color: var(--top-bg);
     height: $header-height;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: -1;
+}
+
+.body {
+    background-color: var(--main-bg);
 }
 
 main {

@@ -9,7 +9,7 @@
 @mixin gray-title ($font-size: 1rem){
     font-size: $font-size;
     font-weight: var(--font-weight-bold);
-    color: var(--card-text-gray);
+    color: var(--text-color2);
 }
 
 body{
@@ -32,7 +32,7 @@ label,
 }
 
 .followers__number {
-    color: var(--card-text-darkblue);
+    color: var(--text-color1);
     font-size: 4rem;
     font-weight: var(--font-weight-bold);
     letter-spacing: -3px;
@@ -40,7 +40,7 @@ label,
 
 .app-follow-name {
     text-transform: uppercase;
-    color: var(--card-text-gray);
+    color: var(--text-color2);
     letter-spacing: 0.25rem;
 }
 
