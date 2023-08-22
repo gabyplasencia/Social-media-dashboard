@@ -21,9 +21,8 @@
 }
 
 .card--follower:nth-child(3) {
-  border-top: solid 5px;
+  border-top: solid 5px transparent;
   background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box, var(--instagram) border-box;
-  border-color: transparent;
   border-radius: 5px;
 }
 
@@ -283,10 +282,6 @@ main {
   flex-direction: row;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   visibility: hidden;
   font-size: 0.1px;
@@ -312,6 +307,15 @@ hr {
   text-align: center;
 }
 
+@media (min-width: 600px) and (max-width: 900px) {
+  .follower-section,
+  .overview {
+    margin: 0;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 *,
 *::before,
 *::after {

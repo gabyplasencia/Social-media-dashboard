@@ -20,11 +20,13 @@
 }
 
 .card--follower:nth-child(3){
-    border-top: solid 5px;
+    border-top: solid 5px transparent;
     background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box
     ,var(--instagram) border-box;
-    border-color: transparent;
     border-radius: 5px;
+//     border-right: solid 1.6px var(--card-bg);
+//     border-left: solid 1px var(--card-bg);
+//     border-bottom: solid 1px var(--card-bg);
 }
 
 .card--follower:nth-child(4){

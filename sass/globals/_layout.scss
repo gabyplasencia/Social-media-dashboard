@@ -34,10 +34,6 @@ main {
     flex-direction: row;
 }
 
-.grid{
-    display: grid;
-}
-
 .hidden {
     visibility: hidden;
     font-size: 0.1px;
@@ -61,4 +57,14 @@ hr {
 .attribution {
     margin: 1rem 0;
     text-align: center;
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    .follower-section,
+    .overview{
+        margin: 0;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
 }
