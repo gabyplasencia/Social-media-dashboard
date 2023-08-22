@@ -77,9 +77,12 @@
 
 .header__subtitle,
 .username,
-label,
-.overview__card--title {
+label {
     @include gray-title();
+}
+
+.overview__card--title{
+    @include gray-title($font-size: var(--font-size-small));
 }
 
 .overview__title{
@@ -92,9 +95,15 @@ label,
 
 .followers__number {
     color: var(--text-color1);
-    font-size: var(--font-size-biggest);
+    font-size:calc(var(--font-size-big) * 1.8);
     font-weight: var(--font-weight-bold);
-    letter-spacing: -3px;
+    letter-spacing: -1px;
+}
+
+.overview__number {
+    font-size:calc(var(--font-size-big) * 1.2);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color1);
 }
 
 .app-follow-name {

@@ -4,11 +4,9 @@
     --font-family-main: 'Inter', sans-serif;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
-    --font-size-biggest: 2.5rem;
-    --font-size-big: 2rem;
+    --font-size-big: 1.6rem;
     --font-size-regular: 1.2rem;
-    --font-size-small: 1rem;
-    --font-size-smallest: 0.7rem;
+    --font-size-small: 0.9rem;
 }
 
 body{
@@ -16,7 +14,7 @@ body{
 }
 
 .header__title {
-    font-size: var(--font-size-biggest);
+    font-size: var(--font-size-big);
     color: var(--text-color1)
 }
 

@@ -61,9 +61,14 @@
 
 .header__subtitle,
 .username,
-label,
-.overview__card--title {
+label {
   font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color2);
+}
+
+.overview__card--title {
+  font-size: var(--font-size-small);
   font-weight: var(--font-weight-bold);
   color: var(--text-color2);
 }
@@ -80,9 +85,15 @@ label,
 
 .followers__number {
   color: var(--text-color1);
-  font-size: var(--font-size-biggest);
+  font-size: calc(var(--font-size-big) * 1.8);
   font-weight: var(--font-weight-bold);
-  letter-spacing: -3px;
+  letter-spacing: -1px;
+}
+
+.overview__number {
+  font-size: calc(var(--font-size-big) * 1.2);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color1);
 }
 
 .app-follow-name {
@@ -166,7 +177,7 @@ label,
 }
 
 #light:checked ~ .toggle__switcher {
-  left: 54%;
+  left: 53.7%;
   background-color: var(--toggle-switch-light);
 }
 
@@ -216,11 +227,9 @@ body.dark {
   --font-family-main: "Inter", sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --font-size-biggest: 2.5rem;
-  --font-size-big: 2rem;
+  --font-size-big: 1.6rem;
   --font-size-regular: 1.2rem;
-  --font-size-small: 1rem;
-  --font-size-smallest: 0.7rem;
+  --font-size-small: 0.9rem;
 }
 
 body {
@@ -228,7 +237,7 @@ body {
 }
 
 .header__title {
-  font-size: var(--font-size-biggest);
+  font-size: var(--font-size-big);
   color: var(--text-color1);
 }
 
@@ -242,7 +251,7 @@ body {
 
 header {
   background-color: var(--top-bg);
-  height: 12rem;
+  height: 15rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -255,7 +264,7 @@ body {
 }
 
 main {
-  margin-top: 8rem;
+  margin-top: 10rem;
 }
 
 .container {
@@ -280,6 +289,22 @@ main {
 
 .hidden {
   visibility: hidden;
+  font-size: 0.1px;
+}
+
+.title {
+  margin-top: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+hr {
+  border: solid 0.2px var(--text-color2);
+  opacity: 0.3;
+}
+
+.toggle-container {
+  margin-top: 1rem;
+  margin-left: auto;
 }
 
 .attribution {
