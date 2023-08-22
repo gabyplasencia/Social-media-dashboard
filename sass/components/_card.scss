@@ -68,3 +68,53 @@
         font-weight: var(--font-weight-bold);
     }
 }
+
+@mixin gray-title ($font-size: 1rem){
+    font-size: $font-size;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color2);
+}
+
+.header__title {
+    font-size: var(--font-size-big)
+}
+
+.header__subtitle,
+.username,
+label,
+.overview__card--title {
+    @include gray-title();
+}
+
+.overview__title{
+    @include gray-title($font-size: var(--font-size-big));
+}
+
+.toggle > label > span {
+    font-size: 0;
+}
+
+.followers__number {
+    color: var(--text-color1);
+    font-size: var(--font-size-biggest);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -3px;
+}
+
+.app-follow-name {
+    text-transform: uppercase;
+    color: var(--text-color2);
+    letter-spacing: 0.25rem;
+}
+
+.up > span{
+    color: var(--symbol-up-green);
+}
+
+.down > span{
+  color: var(--symbol-down-red);
+}
+
+.stat > span {
+    font-weight: var(--font-weight-bold);
+}
