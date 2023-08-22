@@ -40,6 +40,14 @@
   --text-color2: var(--card-text-gray);
 }
 
+body.dark {
+  --top-bg: var(--bg-darkblue-top);
+  --main-bg: var(--bg-darkblue);
+  --card-bg: var(--card-bg-blue);
+  --text-color1: var(--card-text-white);
+  --text-color2: var(--card-text-lightblue);
+}
+
 
 
 

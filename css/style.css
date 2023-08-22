@@ -59,10 +59,6 @@
   font-weight: var(--font-weight-bold);
 }
 
-.header__title {
-  font-size: var(--font-size-big);
-}
-
 .header__subtitle,
 .username,
 label,
@@ -208,11 +204,19 @@ fieldset {
   --text-color2: var(--card-text-gray);
 }
 
+body.dark {
+  --top-bg: var(--bg-darkblue-top);
+  --main-bg: var(--bg-darkblue);
+  --card-bg: var(--card-bg-blue);
+  --text-color1: var(--card-text-white);
+  --text-color2: var(--card-text-lightblue);
+}
+
 :root {
   --font-family-main: "Inter", sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
-  --font-size-biggest: 3rem;
+  --font-size-biggest: 2.5rem;
   --font-size-big: 2rem;
   --font-size-regular: 1.2rem;
   --font-size-small: 1rem;
@@ -221,6 +225,11 @@ fieldset {
 
 body {
   font-family: var(--font-family-main);
+}
+
+.header__title {
+  font-size: var(--font-size-biggest);
+  color: var(--text-color1);
 }
 
 .attribution {
@@ -241,7 +250,7 @@ header {
   z-index: -1;
 }
 
-.body {
+body {
   background-color: var(--main-bg);
 }
 
