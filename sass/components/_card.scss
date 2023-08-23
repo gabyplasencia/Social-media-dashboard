@@ -136,3 +136,19 @@ label {
 }
 
 
+@media (min-width: 600px) and (max-width: 900px){
+
+.card--follower,
+.overview__card {
+    margin: 0;
+}
+
+.overview__card + .overview__card {
+    margin-top: 1rem;
+}
+
+.overview__title {
+    margin: 2rem 0;
+}
+
+}

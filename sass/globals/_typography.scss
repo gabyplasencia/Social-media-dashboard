@@ -26,3 +26,9 @@ body{
         font-weight: var(--font-weight-bold);
     }
 }
+
+@media (min-width: 600px) and (max-width: 900px){
+    .header__title {
+        font-size: calc(var(--font-size-big) * 1.5);
+    }
+}
