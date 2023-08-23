@@ -4,12 +4,64 @@
   border-radius: 5px;
 }
 
+.header__subtitle,
+.username,
+label {
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color2);
+}
+
+.overview__card--title {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color2);
+}
+
+.overview__title {
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color2);
+}
+
+.app-username,
+.stat,
+.overview__card__header,
+.overview__stats {
+  display: flex;
+  flex-direction: row;
+}
+
+.stat {
+  align-items: center;
+}
+
+.stat {
+  font-size: var(--font-size-small);
+}
+
+.up > span {
+  color: var(--symbol-up-green);
+}
+
+.down > span {
+  color: var(--symbol-down-red);
+}
+
+.stat > span {
+  font-weight: var(--font-weight-bold);
+}
+
 .card--follower {
   border-top: solid 5px var(--_top-color);
   margin: 1.5rem 0;
   padding: 1.8rem;
   align-items: center;
   text-align: center;
+}
+
+.app-username {
+  align-items: center;
 }
 
 .card--follower:nth-child(1) {
@@ -30,16 +82,21 @@
   --_top-color: var(--youtube);
 }
 
-.app-username,
-.stat,
-.overview__card__header,
-.overview__stats {
-  display: flex;
-  flex-direction: row;
+.follower-stat {
+  margin: 1.9rem 0;
 }
 
-.stat {
-  align-items: center;
+.followers__number {
+  color: var(--text-color1);
+  font-size: calc(var(--font-size-big) * 3);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -1px;
+}
+
+.app-follow-name {
+  text-transform: uppercase;
+  color: var(--text-color2);
+  letter-spacing: 0.35rem;
 }
 
 .overview__card {
@@ -54,71 +111,23 @@
   justify-content: space-between;
 }
 .overview__number {
-  font-size: var(--font-size-big);
-  font-weight: var(--font-weight-bold);
-}
-
-.header__subtitle,
-.username,
-label {
-  font-size: 1rem;
-  font-weight: var(--font-weight-bold);
-  color: var(--text-color2);
-}
-
-.overview__card--title {
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-bold);
-  color: var(--text-color2);
-}
-
-.overview__title {
-  font-size: var(--font-size-big);
-  font-weight: var(--font-weight-bold);
-  color: var(--text-color2);
-}
-
-.toggle > label > span {
-  font-size: 0;
-}
-
-.followers__number {
-  color: var(--text-color1);
-  font-size: calc(var(--font-size-big) * 1.8);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: -1px;
-}
-
-.overview__number {
   font-size: calc(var(--font-size-big) * 1.2);
   font-weight: var(--font-weight-bold);
   color: var(--text-color1);
 }
 
-.app-follow-name {
-  text-transform: uppercase;
-  color: var(--text-color2);
-  letter-spacing: 0.25rem;
-}
-
-.up > span {
-  color: var(--symbol-up-green);
-}
-
-.down > span {
-  color: var(--symbol-down-red);
-}
-
-.stat > span {
-  font-weight: var(--font-weight-bold);
-}
-
 .app-icon {
-  margin-inline: 0.4rem;
+  height: 30px;
+  margin-inline: 0.8rem;
 }
 
 .stat-symbol {
   margin-inline: 0.15rem;
+}
+
+.toggle-container {
+  margin-top: 1rem;
+  margin-left: auto;
 }
 
 .toggle {
@@ -228,11 +237,12 @@ body.dark {
   --font-weight-bold: 700;
   --font-size-big: 1.6rem;
   --font-size-regular: 1.2rem;
-  --font-size-small: 0.9rem;
+  --font-size-small: 1rem;
 }
 
 body {
   font-family: var(--font-family-main);
+  font-size: var(--font-size-regular);
 }
 
 .header__title {
@@ -250,7 +260,7 @@ body {
 
 header {
   background-color: var(--top-bg);
-  height: 15rem;
+  height: 20rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -263,7 +273,7 @@ body {
 }
 
 main {
-  margin-top: 10rem;
+  margin-top: 13.3333333333rem;
 }
 
 .container {
@@ -275,11 +285,6 @@ main {
 .flex--col {
   display: flex;
   flex-direction: column;
-}
-
-.flex--row {
-  display: flex;
-  flex-direction: row;
 }
 
 .hidden {
@@ -297,11 +302,6 @@ hr {
   opacity: 0.3;
 }
 
-.toggle-container {
-  margin-top: 1rem;
-  margin-left: auto;
-}
-
 .attribution {
   margin: 1rem 0;
   text-align: center;
@@ -310,7 +310,6 @@ hr {
 @media (min-width: 600px) and (max-width: 900px) {
   .follower-section,
   .overview {
-    margin: 0;
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 1fr 1fr;
@@ -337,7 +336,7 @@ picture {
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 img,

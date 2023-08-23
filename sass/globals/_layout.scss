@@ -1,4 +1,4 @@
-$header-height: 15rem;
+$header-height: 20rem;
 
 header {
     background-color: var(--top-bg);
@@ -29,11 +29,6 @@ main {
     flex-direction: column;
 }
 
-.flex--row{
-    display: flex;
-    flex-direction: row;
-}
-
 .hidden {
     visibility: hidden;
     font-size: 0.1px;
@@ -49,11 +44,6 @@ hr {
     opacity: 0.3;
 }
 
-.toggle-container {
-    margin-top: 1rem;
-    margin-left: auto;
-}
-
 .attribution {
     margin: 1rem 0;
     text-align: center;
@@ -62,7 +52,6 @@ hr {
 @media (min-width: 600px) and (max-width: 900px){
     .follower-section,
     .overview{
-        margin: 0;
         display: grid;
         grid-gap: 2rem;
         grid-template-columns: 1fr 1fr;
