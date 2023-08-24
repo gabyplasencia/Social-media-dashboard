@@ -3,6 +3,11 @@
 .card {
     background-color: var(--card-bg);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: var(--card-bg-hover);
 }
 
 @mixin gray-title ($font-size: var(--font-size-regular)){
@@ -83,6 +88,11 @@ label {
 //     border-right: solid 1.6px var(--card-bg);
 //     border-left: solid 1px var(--card-bg);
 //     border-bottom: solid 1px var(--card-bg);
+}
+
+.card--follower:nth-child(2):hover {
+    background: linear-gradient(var(--card-bg-hover), var(--card-bg-hover)) padding-box
+    ,var(--instagram) border-box;
 }
 
 .card--follower:nth-child(3){

@@ -2,6 +2,11 @@
 .card {
   background-color: var(--card-bg);
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: var(--card-bg-hover);
 }
 
 .header__subtitle,
@@ -72,6 +77,10 @@ label {
   border-top: solid 5px transparent;
   background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box, var(--instagram) border-box;
   border-radius: 5px;
+}
+
+.card--follower:nth-child(2):hover {
+  background: linear-gradient(var(--card-bg-hover), var(--card-bg-hover)) padding-box, var(--instagram) border-box;
 }
 
 .card--follower:nth-child(3) {
@@ -239,11 +248,13 @@ fieldset {
   --bg-white: hsl(0, 0%, 100%);
   --bg-lightblue: hsl(225, 100%, 98%);
   --card-bg-lightgray: hsl(227, 47%, 96%);
+  --card-bg-gray: hsl(228, 12%, 90%);
   --card-text-gray: hsl(228, 12%, 44%);
   --card-text-darkblue: hsl(230, 17%, 14%);
   --bg-darkblue: hsl(230, 17%, 14%);
   --bg-darkblue-top: hsl(232, 19%, 15%);
   --card-bg-blue: hsl(228, 28%, 20%);
+  --card-bg-bluegray: hsl(228, 28%, 25%);
   --card-text-lightblue: hsl(228, 34%, 66%);
   --card-text-white: hsl(0, 0%, 100%);
 }
@@ -252,6 +263,7 @@ fieldset {
   --top-bg: var(--bg-lightblue);
   --main-bg: var(--bg-white);
   --card-bg: var(--card-bg-lightgray);
+  --card-bg-hover: var(--card-bg-gray);
   --text-color1: var(--card-text-darkblue);
   --text-color2: var(--card-text-gray);
 }
@@ -260,6 +272,7 @@ body.dark {
   --top-bg: var(--bg-darkblue-top);
   --main-bg: var(--bg-darkblue);
   --card-bg: var(--card-bg-blue);
+  --card-bg-hover: var(--card-bg-bluegray);
   --text-color1: var(--card-text-white);
   --text-color2: var(--card-text-lightblue);
 }
