@@ -69,13 +69,13 @@ label {
 }
 
 .card--follower:nth-child(2) {
-  --_top-color: var(--twitter);
-}
-
-.card--follower:nth-child(3) {
   border-top: solid 5px transparent;
   background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box, var(--instagram) border-box;
   border-radius: 5px;
+}
+
+.card--follower:nth-child(3) {
+  --_top-color: var(--twitter);
 }
 
 .card--follower:nth-child(4) {
@@ -295,7 +295,7 @@ main {
 
 .container {
   width: 85%;
-  max-width: 1100px;
+  max-width: 1600px;
   margin-inline: auto;
 }
 
@@ -330,6 +330,17 @@ hr {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 901px) {
+  hr {
+    visibility: hidden;
+  }
+  .follower-section,
+  .overview {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 *,
