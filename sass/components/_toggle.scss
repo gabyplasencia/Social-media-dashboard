@@ -44,6 +44,7 @@
 	background-color:var(--toggle-switch-dark); 
 	transition: all 0.1s ease-out;
 	z-index: 2;
+	cursor: pointer;
 }
 
 .toggle__background {
@@ -67,4 +68,22 @@
 
 fieldset {
 	border: none;
+}
+
+@media (min-width: 901px) {
+	.toggle__wrapper {
+		font-size: 0.6rem;
+	}
+
+	label {
+		font-size: var(--font-size-regular);
+	}
+
+	.toggle__switcher {
+		display: block;
+		position: absolute;
+		top: 3px;
+		left: 3.5px;
+		height: 80%;
+	}
 }

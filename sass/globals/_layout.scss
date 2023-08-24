@@ -59,8 +59,30 @@ hr {
 }
 
 @media (min-width: 901px) {
+
+    header > .flex--col{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header {
+        height: 17rem;
+    }
+    
+    main {
+        margin-top: calc(17rem / 1.8);
+    }
+
+    .title {
+        margin: 3rem 0;
+    }
+
     hr {
         visibility: hidden;
+    }
+    
+    .overview__title{
+        margin: 1.5rem 0;
     }
 
     .follower-section,

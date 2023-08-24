@@ -128,6 +128,11 @@ label {
     margin: 2rem 0;
   }
 }
+@media (min-width: 900px) {
+  .followers__number {
+    font-size: calc(var(--font-size-big) * 2.5);
+  }
+}
 .app-icon {
   height: 30px;
   margin-inline: 0.8rem;
@@ -180,6 +185,7 @@ label {
   background-color: var(--toggle-switch-dark);
   transition: all 0.1s ease-out;
   z-index: 2;
+  cursor: pointer;
 }
 
 .toggle__background {
@@ -205,6 +211,21 @@ fieldset {
   border: none;
 }
 
+@media (min-width: 901px) {
+  .toggle__wrapper {
+    font-size: 0.6rem;
+  }
+  label {
+    font-size: var(--font-size-regular);
+  }
+  .toggle__switcher {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3.5px;
+    height: 80%;
+  }
+}
 :root {
   --facebook: hsl(208, 92%, 53%);
   --twitter: hsl(203, 89%, 53%);
@@ -275,6 +296,16 @@ body {
     font-size: calc(var(--font-size-big) * 1.5);
   }
 }
+@media (min-width: 901px) {
+  :root {
+    --font-size-big: 2.3rem;
+    --font-size-regular: 1.5rem;
+    --font-size-small: 1.3rem;
+  }
+  footer {
+    margin: 2.5rem 0;
+  }
+}
 header {
   background-color: var(--top-bg);
   height: 20rem;
@@ -333,8 +364,24 @@ hr {
   }
 }
 @media (min-width: 901px) {
+  header > .flex--col {
+    flex-direction: row;
+    align-items: center;
+  }
+  header {
+    height: 17rem;
+  }
+  main {
+    margin-top: 9.4444444444rem;
+  }
+  .title {
+    margin: 3rem 0;
+  }
   hr {
     visibility: hidden;
+  }
+  .overview__title {
+    margin: 1.5rem 0;
   }
   .follower-section,
   .overview {

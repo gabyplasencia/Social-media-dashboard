@@ -32,3 +32,15 @@ body{
         font-size: calc(var(--font-size-big) * 1.5);
     }
 }
+
+@media (min-width: 901px) {
+	:root {
+        --font-size-big: 2.3rem;
+        --font-size-regular: 1.5rem;
+        --font-size-small: 1.3rem;
+    }
+
+    footer {
+        margin: 2.5rem 0;
+    }
+}

@@ -152,3 +152,10 @@ label {
 }
 
 }
+
+@media (min-width: 900px) {
+
+    .followers__number {
+        font-size:calc(var(--font-size-big) * 2.5);
+    }
+}
