@@ -4,7 +4,7 @@
     --font-family-main: 'Inter', sans-serif;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
-    --font-size-big: 1.6rem;
+    --font-size-big: 1.45rem;
     --font-size-regular: 1.2rem;
     --font-size-small: 1rem;
 }
@@ -21,6 +21,7 @@ body{
 
 .attribution {
     color: var(--text-color2);
+    font-size: var(--font-size-small);
     a {
         color: var(--text-color2);
         font-weight: var(--font-weight-bold);
@@ -35,9 +36,9 @@ body{
 
 @media (min-width: 1101px) {
 	:root {
-        --font-size-big: 2.3rem;
-        --font-size-regular: 1.5rem;
-        --font-size-small: 1.3rem;
+        --font-size-big: 1.8rem;
+        --font-size-regular: 1.2rem;
+        --font-size-small: 1rem;
     }
 
     footer {
