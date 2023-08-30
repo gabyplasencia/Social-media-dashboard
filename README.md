@@ -6,3 +6,5 @@ El diseño a replicar: https://www.figma.com/file/Lb2DTIGYsb4ny0cYHtBoeK/Untitle
 
 El requerimiento funcional sera que tenga un toggle para tema oscuro o claro y que sea responsive.
 
+Live Site https://socialmediadashboard-fm.netlify.app/
+
